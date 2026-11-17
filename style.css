@@ -6,8 +6,10 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+#sky{
+    height: 200px;
+}
 #forest{
-    margin: auto;
     width: 100%;
 }
 #forest img{
