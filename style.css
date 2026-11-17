@@ -1,3 +1,16 @@
-img{
+body{
+    image-rendering: pixelated;
     margin: 0;
+    background-image: url(sky.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#forest{
+    margin: auto;
+    width: 100%;
+}
+#forest img{
+    margin: 0;
+    width: 100%;
 }
