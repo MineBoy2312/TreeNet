@@ -5,9 +5,13 @@ body{
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-family: arial;
+    background-color: #449FFF;
 }
 #sky{
-    height: 200px;
+    height: 300px;
+    width: 100%;
+    display: flex;
 }
 #forest{
     width: 100%;
@@ -15,4 +19,11 @@ body{
 #forest img{
     margin: 0;
     width: 100%;
+}
+#title{
+    margin: auto;
+    text-align: center;
+}
+#title h1{
+    margin: 10px 0px 10px 0px
 }
