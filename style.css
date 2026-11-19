@@ -59,12 +59,53 @@ body{
     margin: 0;
     width: 100%;
 }
+#top, #middle, #bottom{
+    margin: 0;
+    width: 100%;
+}
+#top{
+    background: url("toplayer.png");
+    width: 100%;
+    padding-bottom: 116.91658857%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    resize: horizontal;
+    z-index: -1;
+    display: flex;
+}
+#window{
+    height: 100px;
+    width: 100px;
+    background: #00f2ff82;
+    border-radius: 10px;
+    border: 1px solid #00858b;
+    margin: auto;
+}
+#middle{
+    background: url("middlelayer.png");
+    width: 100%;
+    padding-top: 153.65510778%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    resize: horizontal;
+}
+#bottom{
+    background: url("bottomlayer.png");
+    width: 100%;
+    padding-top: 202.6710403%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    resize: horizontal;
+}
+
+
+
 #title{
     margin: auto;
     text-align: center;
 }
 #title h1{
-    margin: 10px 0px 10px 0px
+    margin: 10px 0px 10px 0px;
 }
 #box{
     padding: 10px;
