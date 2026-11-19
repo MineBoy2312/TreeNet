@@ -10,7 +10,8 @@ body{
 }
 #header{
     width: 100%;
-    background: linear-gradient(180deg, #84be6c 2%, #298803 15%, #298803 99%);
+    /*background: linear-gradient(180deg, #84be6c 2%, #298803 15%, #298803 99%);*/
+    background: #298803;
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.564);
     display: flex;
     height: 40px;
@@ -27,7 +28,12 @@ body{
     font-style: italic;
     color: white;
     font-size: 30px;
-    margin: 2px 15px 0px 15px;
+    margin: 2px 15px 0px 0px;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
 }
 #nav{
     display: flex;
