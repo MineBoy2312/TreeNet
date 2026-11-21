@@ -37,11 +37,6 @@ body{
     font-size: 30px;
     margin: auto 0px auto 0px;
 }
-.icon{
-    width: 35px;
-    height: 35px;
-    margin: auto 10px auto 0px;
-}
 #logobox{
     padding: 5px 30px 2px 15px;
     margin: 0px 0px 0px 0px;
@@ -106,7 +101,7 @@ body{
     z-index: 2;
 }
 #window{
-    width: 500px;
+    width: 645px;
     padding: 10px;
     margin: 0px auto 20px auto;
     position: sticky;
@@ -120,7 +115,7 @@ body{
     font-family: 'Quicksand', sans-serif;
 }
 #window2{
-    width: 500px;
+    width: 645px;
     padding: 10px;
     margin: 0px auto 20px auto;
     position: sticky;
@@ -132,7 +127,7 @@ body{
     box-shadow: 5px 5px 0px #234729;
 }
 #window3{
-    width: 500px;
+    width: 645px;
     padding: 10px;
     margin: 0px auto 20px auto;
     position: sticky;
@@ -271,7 +266,11 @@ body{
  padding: 15px 4%;
  border-bottom: 3px solid #593e2b;
 }
-
+.icon{
+    width: 35px;
+    height: 35px;
+    margin: auto 10px auto 0px;
+}
 
 .logooo {
  font-family: 'Cormorant Garamond', serif;
@@ -280,9 +279,13 @@ body{
  font-size: 1.55rem;
  color: #234729;
  background-color: #c5eba8;
- padding: 4px 18px;
+ padding: 0px 18px;
  border: 2px solid #234729;
  border-radius: 50px;
+ vertical-align: center;
+}
+.icon{
+    margin-top: 5px;
 }
 
 
@@ -321,12 +324,21 @@ body{
 
 
 .hero-grove {
+    background-color: #eef9ea;
+    border: 3px solid #234729;
+    border-radius: 30px;
+    padding: 36px 28px;
+    text-align: center;
+    margin-bottom: 32px;
+    box-shadow: 5px 5px 0px #593e2b;
+}
+.hero-grove2{
  background-color: #eef9ea;
  border: 3px solid #234729;
  border-radius: 30px;
  padding: 36px 28px;
  text-align: center;
- margin-bottom: 32px;
+margin: auto auto auto auto;
  box-shadow: 5px 5px 0px #593e2b;
 }
 
@@ -344,7 +356,7 @@ body{
 }
 
 
-.hero-grove h1 {
+.hero-grove h1, .hero-grove2 h1 {
  font-family: 'Cormorant Garamond', serif;
  font-size: 2.6rem;
  color: #234729;
@@ -352,7 +364,7 @@ body{
 }
 
 
-.hero-grove p {
+.hero-grove p, .hero-grove2 p {
  max-width: 620px;
  margin: 0 auto;
  font-size: 1rem;
@@ -498,8 +510,8 @@ body{
 
 .footer{
  font-family: 'Cormorant Garamond', serif;
- color: #eef9ea;
- font-size: 15px;
+ color: #234729;
+ font-size: 20px;
  text-align: center;
  font-style: italic;
  margin-top: 45px;
