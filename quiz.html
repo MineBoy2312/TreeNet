@@ -10,20 +10,35 @@
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 </head>
 <body>
-    <div id="header">
-        <img src="Treenet-logo.png" width="30"><div id="logo">TreeNet</div><div id="sub">Making Tree Life Education Easier</div>
-        <div id="nav">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Impacts</a>
-            <a href="#">Call to Action</a>
-            <a href="#">Cool Links</a>
-            <a href="#">Quiz</a>
+    <div id="banner">
+        <div class="top-banner">
+            <marquee direction="right">~ nurture the wild ~ protect the soil ~ tend the forest ~ guard every creature ~ restore life on land ~</marquee>
+        </div>
+        <div id="header">
+            <div id="logobox">
+                <img src="Treenet-logo.png" class="icon"><div id="logo">TreeNet</div>
+            </div>
+            <div id="sub">Making Tree Life Education Easier</div>
+            <div id="nav">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Impacts</a>
+                <a href="#">Call to Action</a>
+                <a href="#">Cool Links</a>
+                <a href="#">Quiz</a>
+            </div>
         </div>
     </div>
-    <br><br><br><br>
+    <br><br><br><br><br><br>
     <div id="container">
-        <div id="box">
+        <h1>Test Your Knowledge!</h1>
+            <div id="quiz"></div>
+            <div id="box" style="display: flex;">
+            <button id="submit">Submit</button>
+            <div id="results"></div>
+            </div>
+
+        <!--<div id="box">
             <h3>Why did the chicken cross the road?</h3>
             <form>
                 <input type="radio" id="answer1" value="answer1" name="question">
@@ -34,7 +49,100 @@
                 <label for="answer3">For a job interview at KFC</label><br><br>
                 <input type="button" value="Submit">
             </form>
-        </div>
+        </div>-->
     </div>
 </body>
 </html>
+<script>
+    function buildQuiz(){
+        const output = [];
+            
+     myQuestions.forEach(
+    (currentQuestion, questionNumber) => {
+
+
+      const answers = [];
+
+      for(letter in currentQuestion.answers){
+
+
+        answers.push(
+            `<label>
+            <input type="radio" name="question${questionNumber}" value="${letter}">
+            ${letter} :
+            ${currentQuestion.answers[letter]}
+        </label><br>`
+        );
+        
+      }
+
+
+      output.push(
+        `<div id="box">
+        <div class="question"> ${currentQuestion.question} </div>
+        <div class="answers"> ${answers.join('')}</div>
+        </div>`
+      );
+    }
+  );
+
+        quizContainer.innerHTML = output.join('');
+    }
+    function showResults(){
+
+        const answerContainers = quizContainer.querySelectorAll('.answers');
+        let numCorrect = 0;
+        myQuestions.forEach( (currentQuestion, questionNumber) => {
+            const answerContainer = answerContainers[questionNumber];
+            const selector = `input[name=question${questionNumber}]:checked`;
+            const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+
+            if(userAnswer === currentQuestion.correctAnswer){
+            numCorrect++;
+                answerContainers[questionNumber].style.color = 'lightgreen';
+            }
+            else{
+            
+                answerContainers[questionNumber].style.color = 'red';
+            }
+        });
+        resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+    }
+    const quizContainer = document.getElementById('quiz');
+    const resultsContainer = document.getElementById('results');
+    const submitButton = document.getElementById('submit');
+    const myQuestions = [
+        {
+            question: "Why did the chicken cross the road?",
+            answers: {
+                a: "Because he can",
+                b: "To get to the other side",
+                c: "For a job interview at KFC"
+            },
+            correctAnswer: "b"
+        },
+        {
+            question: "What is the best Beatles album?",
+            answers: {
+                a: "Abbey Road",
+                b: "Yellow Submarine",
+                c: "Revolver"
+            },
+            correctAnswer: "c"
+        },
+        {
+            question: "What is the name of Godspeed You! Black Emperor's second album?",
+            answers: {
+                a: "Lift Yr. Skinny Fists Like Antennas to Heaven",
+                b: "Godspeed You! Black Emporor pt. 2",
+                c: "The orange album"
+
+            },
+            correctAnswer: "a"
+        }
+    ];
+
+    buildQuiz();
+
+    submitButton.addEventListener('click', showResults);
+</script>
