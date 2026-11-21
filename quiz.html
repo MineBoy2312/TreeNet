@@ -8,9 +8,11 @@
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="top-banner">
+  <div id="banner">
+ <div class="top-banner">
    <marquee>~ nurture the wild ~ protect the soil ~ tend the forest ~ guard every creature ~ restore life on land ~</marquee>
  </div>
    <!-- second section-->
@@ -26,17 +28,22 @@
 
        <li><a href="#">Creatures</a></li>
        <li><a href="#">Humans</a></li>
-       <li><a href="#" class="active">Now What?</a></li>
+       <li><a href="#">Now What?</a></li>
        <li><a href="links.html">Learn More</a></li>
-       <li><a href="quiz.html">Test Your Knowledge</a></li>
+       <li><a href="quiz.html" class="active">Test Your Knowledge</a></li>
      </ul>
    </nav>
 
 
  </header>
-    <br><br><br><br><br><br>
+ </div>
+    <br><br><br><br><br><br><br><br><br>
     <div id="container">
+    <section class="hero-grove">
+        <span class="pill-tag">Goal 15 &bull; Life on Land</span>
         <h1>Test Your Knowledge!</h1>
+        <p>Time to put your newfound knowledge to use.</p>
+    </section>
             <div id="quiz"></div>
             <div id="box" style="display: flex;">
             <button id="submit">Submit</button>
