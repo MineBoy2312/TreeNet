@@ -269,9 +269,11 @@ body{
 .icon{
     width: 35px;
     height: 35px;
-    margin: auto 10px auto 0px;
+    margin: auto 5px auto 0px;
 }
-
+#treenet{
+    margin: auto 0px auto 0px;
+}
 .logooo {
  font-family: 'Cormorant Garamond', serif;
  font-weight: 700;
@@ -279,13 +281,11 @@ body{
  font-size: 1.55rem;
  color: #234729;
  background-color: #c5eba8;
- padding: 0px 18px;
+ padding: 5px 15px;
  border: 2px solid #234729;
  border-radius: 50px;
  vertical-align: center;
-}
-.icon{
-    margin-top: 5px;
+ display: flex;
 }
 
 
