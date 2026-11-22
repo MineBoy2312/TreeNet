@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <!-- // Source - https://stackoverflow.com/a/72092840
+    // Posted by Sten Techy -->
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+</head>
+<body>
+    <div class="top-banner">
+   <marquee>~ nurture the wild ~ protect the soil ~ tend the forest ~ guard every creature ~ restore life on land ~</marquee>
+ </div>
+   <!-- second section-->
+
+
+ <header class="navbar">
+   <div class="logooo">TreeNet</div>
+   <nav>
+     <ul class="nav-links">
+       <li><a href="index.html">Home</a></li>
+         <li><a href="#">Earth</a></li>
+
+
+       <li><a href="#">Creatures</a></li>
+       <li><a href="#">Humans</a></li>
+       <li><a href="#" class="active">Now What?</a></li>
+       <li><a href="links.html">Learn More</a></li>
+       <li><a href="quiz.html">Test Your Knowledge</a></li>
+     </ul>
+   </nav>
+
+
+ </header>
+    <br><br><br><br><br><br>
+    <div id="container">
+        <h1>Test Your Knowledge!</h1>
+            <div id="quiz"></div>
+            <div id="box" style="display: flex;">
+            <button id="submit">Submit</button>
+            <div id="results"></div>
+            </div>
+
+        <!--<div id="box">
+            <h3>Why did the chicken cross the road?</h3>
+            <form>
+                <input type="radio" id="answer1" value="answer1" name="question">
+                <label for="answer1">Because he can😎</label><br>
+                <input type="radio" id="answer2" value="answer2" name="question">
+                <label for="answer2">To get to the other side</label><br>
+                <input type="radio" id="answer3" value="answer3" name="question">
+                <label for="answer3">For a job interview at KFC</label><br><br>
+                <input type="button" value="Submit">
+            </form>
+        </div>-->
+    </div>
+</body>
+</html>
+<script>
+    function buildQuiz(){
+        const output = [];
+            
+     myQuestions.forEach(
+    (currentQuestion, questionNumber) => {
+
+
+      const answers = [];
+
+      for(letter in currentQuestion.answers){
+
+
+        answers.push(
+            `<label>
+            <input type="radio" name="question${questionNumber}" value="${letter}">
+            ${letter} :
+            ${currentQuestion.answers[letter]}
+        </label><br>`
+        );
+        
+      }
+
+
+      output.push(
+        `<div id="box">
+        <div class="question"> ${currentQuestion.question} </div>
+        <div class="answers"> ${answers.join('')}</div>
+        </div>`
+      );
+    }
+  );
+
+        quizContainer.innerHTML = output.join('');
+    }
+    function showResults(){
+
+        const answerContainers = quizContainer.querySelectorAll('.answers');
+        let numCorrect = 0;
+        myQuestions.forEach( (currentQuestion, questionNumber) => {
+            const answerContainer = answerContainers[questionNumber];
+            const selector = `input[name=question${questionNumber}]:checked`;
+            const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+
+            if(userAnswer === currentQuestion.correctAnswer){
+            numCorrect++;
+                answerContainers[questionNumber].style.color = 'lightgreen';
+            }
+            else{
+            
+                answerContainers[questionNumber].style.color = 'red';
+            }
+        });
+        resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+    }
+    const quizContainer = document.getElementById('quiz');
+    const resultsContainer = document.getElementById('results');
+    const submitButton = document.getElementById('submit');
+    const myQuestions = [
+        {
+            question: "Why did the chicken cross the road?",
+            answers: {
+                a: "Because he can",
+                b: "To get to the other side",
+                c: "For a job interview at KFC"
+            },
+            correctAnswer: "b"
+        },
+        {
+            question: "What is the best Beatles album?",
+            answers: {
+                a: "Abbey Road",
+                b: "Yellow Submarine",
+                c: "Revolver"
+            },
+            correctAnswer: "c"
+        },
+        {
+            question: "What year did Windows XP release?",
+            answers: {
+                a: "2001",
+                b: "2003",
+                c: "1999"
+
+            },
+            correctAnswer: "a"
+        }
+    ];
+
+    buildQuiz();
+
+    submitButton.addEventListener('click', showResults);
+</script>
