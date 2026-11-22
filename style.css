@@ -96,14 +96,24 @@ body{
     position: relative;
 }
 #window-container{
-    margin: 0px auto -1500px auto;
+    margin: 0px auto 0px auto;
+    width: 100%;
+    z-index: 2;
+}
+#window-container2{
+    margin: 0px auto 0px auto;
+    width: 100%;
+    z-index: 2;
+}
+#window-container3{
+    margin: 0px auto -4500px auto;
     width: 100%;
     z-index: 2;
 }
 #window{
     width: 645px;
     padding: 10px;
-    margin: 0px auto 20px auto;
+    margin: 0px auto 50px auto;
     position: sticky;
     z-index: 3;
     padding: 36px 28px;
@@ -117,7 +127,7 @@ body{
 #window2{
     width: 645px;
     padding: 10px;
-    margin: 0px auto 20px auto;
+    margin: 0px auto 50px auto;
     position: sticky;
     z-index: 3;
     background-color: #eef9ea;
@@ -338,7 +348,7 @@ body{
  border-radius: 30px;
  padding: 36px 28px;
  text-align: center;
-margin: auto auto auto auto;
+margin: auto auto 70px auto;
  box-shadow: 5px 5px 0px #593e2b;
 }
 
