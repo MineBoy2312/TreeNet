@@ -549,9 +549,9 @@ margin: auto auto 70px auto;
   border: 3px solid #234729;
   border-radius: 24px;
   padding: 28px;
-  margin-bottom: 28px;
   box-shadow: 5px 5px 0px #234729;
-  width: 300px;
+  width: 700px;
+  margin: 0px auto 28px auto;
 }
 
 .blue-accent-card {
