@@ -6,22 +6,38 @@
 
 body {
   font-family: 'Quicksand', sans-serif;
-  background-size: cover;
-  background-position: center;
+  background-image: url(sky.png);
+  background-position-y: 30px;
+  background-size: 100%;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #449FFF;
 }
 
 .top-banner {
-  background-color: #234729;
-  color: #c5eba8;
-  text-align: center;
-  padding: 8px 12px;
-  border-bottom: 2px solid #593e2b;
-  font-family: 'Cormorant Garamond', serif;
-  font-style: italic;
-  font-size: 1.05rem;
+ background-color: #234729;
+ color: #c5eba8;
+ text-align: center;
+ padding: 8px 12px;
+ border-bottom: 2px solid #593e2b;
+ font-family: 'Cormorant Garamond', serif;
+ font-style: italic;
+ font-size: 1.05rem;
+ height: 35px;
 }
-
+#treenet{
+    margin: auto 0px auto 0px;
+}
+.banner{
+    position: fixed;
+    width: 100%;
+    z-index: 102;
+}
+.icon{
+    width: 35px;
+    height: 35px;
+    margin: auto 5px auto 0px;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -34,15 +50,17 @@ body {
 }
 
 .logooo {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 700;
-  font-style: italic;
-  font-size: 1.55rem;
-  color: #234729;
-  background-color: #c5eba8;
-  padding: 4px 18px;
-  border: 2px solid #234729;
-  border-radius: 50px;
+ font-family: 'Cormorant Garamond', serif;
+ font-weight: 700;
+ font-style: italic;
+ font-size: 1.55rem;
+ color: #234729;
+ background-color: #c5eba8;
+ padding: 5px 15px;
+ border: 2px solid #234729;
+ border-radius: 50px;
+ vertical-align: center;
+ display: flex;
 }
 
 .nav-links {

@@ -111,7 +111,7 @@ body{
     z-index: 2;
 }
 #window{
-    width: 645px;
+    width: 700px;
     padding: 10px;
     margin: 0px auto 50px auto;
     position: sticky;
@@ -125,7 +125,7 @@ body{
     font-family: 'Quicksand', sans-serif;
 }
 #window2{
-    width: 645px;
+    width: 700px;
     padding: 10px;
     margin: 0px auto 50px auto;
     position: sticky;
@@ -137,7 +137,7 @@ body{
     box-shadow: 5px 5px 0px #234729;
 }
 #window3{
-    width: 645px;
+    width: 700px;
     padding: 10px;
     margin: 0px auto 20px auto;
     position: sticky;
@@ -327,7 +327,7 @@ body{
 
 
 .container {
- max-width: 820px;
+ max-width: 750px;
  margin: 0px auto;
  padding: 0 20px;
 }
@@ -341,6 +341,7 @@ body{
     text-align: center;
     margin-bottom: 32px;
     box-shadow: 5px 5px 0px #593e2b;
+    width: 100%;
 }
 .hero-grove2{
  background-color: #eef9ea;
@@ -348,8 +349,9 @@ body{
  border-radius: 30px;
  padding: 36px 28px;
  text-align: center;
-margin: auto auto 70px auto;
+ margin: auto auto 70px auto;
  box-shadow: 5px 5px 0px #593e2b;
+ width: 700px;
 }
 
 
