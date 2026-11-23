@@ -28,7 +28,7 @@ body {
 #treenet{
     margin: auto 0px auto 0px;
 }
-.banner{
+#banner{
     position: fixed;
     width: 100%;
     z-index: 102;
@@ -89,8 +89,8 @@ body {
 
 .container {
   max-width: 920px;
-  margin: 35px auto;
-  padding: 0 20px;
+  margin: 0px auto;
+  padding-top: 135px;
 }
 
 .hero-grove {
