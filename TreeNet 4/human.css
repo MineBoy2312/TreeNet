@@ -1,0 +1,346 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.top-banner {
+  background-color: #234729;
+  color: #c5eba8;
+  text-align: center;
+  padding: 8px 12px;
+  border-bottom: 2px solid #593e2b;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  background-color: #eef9ea;
+  padding: 15px 4%;
+  border-bottom: 3px solid #593e2b;
+}
+
+.logooo {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.55rem;
+  color: #234729;
+  background-color: #c5eba8;
+  padding: 4px 18px;
+  border: 2px solid #234729;
+  border-radius: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #234729;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 7px 14px;
+  border: 2px solid #234729;
+  border-radius: 50px;
+  background-color: #9ad4f5;
+  display: inline-block;
+}
+
+.nav-links a.active {
+  background-color: #234729;
+  color: #eef9ea;
+}
+
+.container {
+  max-width: 920px;
+  margin: 35px auto;
+  padding: 0 20px;
+}
+
+.hero-grove {
+  background-color: #eef9ea;
+  border: 3px solid #234729;
+  border-radius: 30px;
+  padding: 36px 28px;
+  text-align: center;
+  margin-bottom: 32px;
+  box-shadow: 5px 5px 0px #593e2b;
+}
+
+.pill-tag {
+  display: inline-block;
+  background-color: #9ad4f5;
+  color: #234729;
+  border: 2px solid #234729;
+  padding: 4px 15px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.hero-grove h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.6rem;
+  color: #234729;
+  margin-bottom: 10px;
+}
+
+.hero-grove p {
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #593e2b;
+  font-weight: 600;
+}
+
+.card {
+  background-color: #eef9ea;
+  border: 3px solid #234729;
+  border-radius: 24px;
+  padding: 26px;
+  margin-bottom: 28px;
+  box-shadow: 5px 5px 0px #234729;
+}
+
+.blue-accent-card {
+  box-shadow: 5px 5px 0px #265c80;
+}
+
+.brown-accent-card {
+  box-shadow: 5px 5px 0px #593e2b;
+}
+
+.split-card {
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.split-card.reverse-split {
+  grid-template-columns: 1fr 270px;
+}
+
+.split-card.reverse-split .dual-photo-stack {
+  order: 2;
+}
+
+.split-card.reverse-split .split-content {
+  order: 1;
+}
+
+@media (max-width: 740px) {
+  .split-card,
+  .split-card.reverse-split {
+    grid-template-columns: 1fr;
+  }
+
+  .split-card.reverse-split .dual-photo-stack,
+  .split-card.reverse-split .split-content {
+    order: unset;
+  }
+}
+
+.dual-photo-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.photo-slot {
+  position: relative;
+  width: 100%;
+  flex: 1;
+  min-height: 170px;
+  background-color: #ffffff;
+  border: 2px solid #234729;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.photo-slot img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.step-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.3rem;
+  background-color: #c5eba8;
+  color: #234729;
+  border: 2px solid #234729;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 31px;
+  flex-shrink: 0;
+}
+
+.card h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.85rem;
+  color: #234729;
+}
+
+.section-intro {
+  margin-bottom: 14px;
+  color: #593e2b;
+  font-weight: 600;
+}
+
+.timeline-entry {
+  background-color: #ffffff;
+  border: 2px solid #234729;
+  border-radius: 16px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+}
+
+.now-entry {
+  border-left: 6px solid #234729;
+}
+
+.future-entry {
+  border-left: 6px solid #593e2b;
+}
+
+.time-badge {
+  display: inline-block;
+  border: 2px solid #234729;
+  border-radius: 50px;
+  padding: 2px 11px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.now-badge {
+  background-color: #c5eba8;
+  color: #234729;
+}
+
+.future-badge {
+  background-color: #9ad4f5;
+  color: #234729;
+}
+
+.timeline-entry p {
+  color: #234729;
+  font-size: 0.93rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.tungtung {
+  border-block-end: 1px solid #234729;
+  margin-block-start: 0.4rem;
+  padding-block: 0.4rem;
+}
+
+.tungtung summary {
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #234729;
+  padding-right: 2rem;
+}
+
+.tungtung summary::marker,
+.tungtung summary::-webkit-details-marker {
+  display: none;
+  content: "";
+}
+
+.tungtung summary::before,
+.tungtung summary::after {
+  content: "";
+  border-block-start: 3px solid #234729;
+  height: 0;
+  width: 1rem;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  transition: transform 0.2s ease;
+}
+
+.tungtung summary::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.tungtung[open] summary::after {
+  transform: translateY(-50%) rotate(0deg);
+}
+
+.tungtung p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 2px dashed #9ad4f5;
+  color: #234729;
+}
+
+.next-page-row {
+  margin-top: 18px;
+  text-align: center;
+}
+
+.next-page-btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #eef9ea;
+  background-color: #593e2b;
+  border: 2px solid #234729;
+  border-radius: 50px;
+  padding: 11px 24px;
+}
+
+.footer {
+  font-family: 'Cormorant Garamond', serif;
+  color: #eef9ea;
+  font-size: 15px;
+  text-align: center;
+  font-style: italic;
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
