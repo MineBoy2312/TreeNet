@@ -90,7 +90,7 @@ body {
 .container {
   max-width: 920px;
   margin: 0px auto;
-  padding-top: 135px;
+  padding-top: 175px;
 }
 
 .hero-grove {
@@ -353,12 +353,11 @@ body {
   padding: 11px 24px;
 }
 
-.footer {
-  font-family: 'Cormorant Garamond', serif;
-  color: #eef9ea;
-  font-size: 15px;
-  text-align: center;
-  font-style: italic;
-  margin-top: 45px;
-  margin-bottom: 20px;
+.footer{
+ font-family: 'Cormorant Garamond', serif;
+ color: #234729;
+ font-size: 20px;
+ text-align: center;
+ font-style: italic;
+ margin: 45px 0px;
 }

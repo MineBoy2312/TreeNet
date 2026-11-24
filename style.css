@@ -326,6 +326,7 @@ body{
  max-width: 750px;
  margin: 0px auto;
  padding: 0 20px;
+ padding-top: 175px;
 }
 
 
@@ -345,9 +346,9 @@ body{
  border-radius: 30px;
  padding: 36px 28px;
  text-align: center;
- margin: auto auto 70px auto;
+ margin: 175px auto auto auto;
  box-shadow: 5px 5px 0px #593e2b;
- width: 700px;
+ width: 710px;
 }
 
 
@@ -683,8 +684,7 @@ body{
  font-size: 20px;
  text-align: center;
  font-style: italic;
- margin-top: 45px;
- margin-bottom: 20px;
+ margin: 45px 0px;
 }
 .article-list {
   display: flex;

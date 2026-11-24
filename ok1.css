@@ -212,18 +212,6 @@
 
 }
 
-
-.footer{
-  font-family: 'Cormorant Garamond', serif;
-  color: #eef9ea;
-  font-size: 15px;
-  text-align: center;
-  font-style: italic;
-  margin-top: 45px;
-  margin-bottom: 20px;
-
-}
-
 .article-list {
   display: flex;
   flex-direction: column;
