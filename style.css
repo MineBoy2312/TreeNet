@@ -179,10 +179,6 @@ body{
 #title h1{
     margin: 10px 0px 10px 0px;
 }
-#container{
-    width: 800px;
-    margin: auto;
-}
 #banner{
     position: fixed;
     width: 100%;
