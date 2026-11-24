@@ -686,3 +686,42 @@ body{
  margin-top: 45px;
  margin-bottom: 20px;
 }
+.article-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.article-card {
+  text-decoration: none;
+  color: #234729;
+  background-color: #ffffff;
+  border: 2px solid #593e2b;
+  border-radius: 18px;
+  padding: 18px 20px;
+  display: block;
+}
+
+.source-tag {
+  display: inline-block;
+  background-color: #593e2b;
+  color: #eef9ea;
+  font-size: 0.75rem;
+  padding: 3px 10px;
+  border-radius: 50px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.article-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.35rem;
+  color: #234729;
+  margin-bottom: 6px;
+}
+
+.article-card p {
+  font-size: 0.92rem;
+  color: #593e2b;
+  margin-bottom: 8px;
+}
