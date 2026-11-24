@@ -92,7 +92,7 @@
 
             if(userAnswer === currentQuestion.correctAnswer){
             numCorrect++;
-                answerContainers[questionNumber].style.color = 'lightgreen';
+                answerContainers[questionNumber].style.color = '#388100';
             }
             else{
             
@@ -106,33 +106,125 @@
     const submitButton = document.getElementById('submit');
     const myQuestions = [
         {
-            question: "Why did the chicken cross the road?",
+            question: "What is a major consequence does waste from landfills have on access to clean drinking water?",
             answers: {
-                a: "Because he can",
-                b: "To get to the other side",
-                c: "For a job interview at KFC"
-            },
-            correctAnswer: "b"
-        },
-        {
-            question: "What is the best Beatles album?",
-            answers: {
-                a: "Abbey Road",
-                b: "Yellow Submarine",
-                c: "Revolver"
+                a: "Thirst will increase dramatically, leading to higher demand for drinking water",
+                b: "Infinite water sources become scarce",
+                c: "They make clean drinking water more difficult to find",
+                d: "It can make the water too hot for safe drinking"
             },
             correctAnswer: "c"
         },
         {
-            question: "What year did Windows XP release?",
+            question: "What color is a Red Panda?",
             answers: {
-                a: "2001",
-                b: "2003",
-                c: "1999"
-
+                a: "Green",
+                b: "Red",
+                c: "Blurple",
+                d: "Purple"
+            },
+            correctAnswer: "b"
+        },
+        {
+            question: "What is a primary cause of deforestation?",
+            answers: {
+                a: "Humans agreeing that the trees don’t look good on the forest",
+                b: "They’re delicious",
+                c: "They are chopped down for the use of paper products",
+                d: "Violent rainfalls"
+            },
+            correctAnswer: "c"
+        },
+                {
+            question: "What biome does illegal gold mining impact the most?",
+            answers: {
+                a: "Deserts",
+                b: "Me",
+                c: "Wetlands",
+                d: "Rainforests"
+            },
+            correctAnswer: "d"
+        },
+                {
+            question: "What is the primary impact pollution has on deserts?",
+            answers: {
+                a: "The global decrease in temperature",
+                b: "Toxins such as petroleum, heavy metals or plastics stay on the surface",
+                c: "CO2 heats up the surface which releases even more carbon into the atmosphere, consequentially melting icebergs",
+                d: "Sand from desserts are being excessively extracted to become goods and jewelry, contributing to overconsumption"
+            },
+            correctAnswer: "b"
+        },
+                {
+            question: "In the woodlands, where are most microplastics put into?",
+            answers: {
+                a: "The trash",
+                b: "The atmosphere",
+                c: "Topsoil",
+                d: "cow"
+            },
+            correctAnswer: "c"
+        },
+                {
+            question: "What is one way that most of our lungs become irritated?",
+            answers: {
+                a: "Smoke from the burning of trash",
+                b: "The extinction of birds",
+                c: "The smoke from burning ice caps",
+                d: "The evaporation of ocean water"
             },
             correctAnswer: "a"
-        }
+        },
+                {
+            question: "What chemical harms most plants making it more difficult to grow food?",
+            answers: {
+                a: "Espericide",
+                b: "Gesctellionide",
+                c: "Katherinide",
+                d: "Pesticides"
+            },
+            correctAnswer: "d"
+        },
+                {
+            question: "What causes most neighborhoods to be messy?",
+            answers: {
+                a: "Trash on the streets",
+                b: "Wildfire surviving animals on the streets",
+                c: "Messystreet-studios",
+                d: "Melted icebergs"
+            },
+            correctAnswer: "a"
+        },
+                {
+            question: "What pulls calcium and magnesium out of woodland soils?",
+            answers: {
+                a: "Tornadoes as a result of climate change",
+                b: "Acid Rain",
+                c: "cow",
+                d: "Fossil fuels"
+            },
+            correctAnswer: "b"
+        },        {
+            question: "How does bringing reusable items help the environment?",
+            answers: {
+                a: "They keep the water chilled, which stops rising temperatures",
+                b: "The squirrels are going to think that you look sooo cool with that Stanley of yours. Therefore, it will keep them happy",
+                c: "It reduces the amount of polar bears used to make plastic",
+                d: "It reduces litter and single-use plastics that can harm the environment"
+            },
+            correctAnswer: "d"
+        },
+                {
+            question: "What SDG does this entire website mainly revolve around?",
+            answers: {
+                a: "SDG 13 Climate Action",
+                b: "SDG 17 Partnership for the goals",
+                c: "SDG 15 Life on Land",
+                d: "SDG 11 Climate Action"
+            },
+            correctAnswer: "c"
+        },
+
     ];
 
     buildQuiz();

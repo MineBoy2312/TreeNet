@@ -3,16 +3,6 @@
   margin: 0;
   padding: 0;
 }
-
-body {
-  font-family: 'Quicksand', sans-serif;
-  background-color: #285c6d;
-  background-image: url("htmlbg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .top-banner {
   background-color: #234729;
   color: #c5eba8;
@@ -75,16 +65,6 @@ body {
   max-width: 820px;
   margin: 35px auto;
   padding: 0 20px;
-}
-
-.hero-grove {
-  background-color: #eef9ea;
-  border: 3px solid #234729;
-  border-radius: 30px;
-  padding: 36px 28px;
-  text-align: center;
-  margin-bottom: 32px;
-  box-shadow: 5px 5px 0px #593e2b;
 }
 
 .pill-tag {
