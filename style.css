@@ -830,8 +830,14 @@ body{
   background-color: #5597bd;
 }
 
+tr{
+  text-align: left;
+}
 th{
-  text-align: center;
+  padding-right: 10px;
+}
+.dex-table{
+  margin-bottom: 10px;
 }
 .dexphoto{
   width: auto;
