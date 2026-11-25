@@ -842,7 +842,6 @@ th{
 .dex-photo{
   display: flex;
   margin: 10px auto;
-  height: 200px;
   display: inline-flex;
 }
 .dex-photo img{
@@ -850,6 +849,9 @@ th{
   display: block;
   height: 100%;
   object-fit: contain;
-  height: 200px;
+  height: 150px;
   align-items: center;
+}
+.dex-category{
+  text-align: center;
 }
