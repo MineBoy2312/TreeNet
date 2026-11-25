@@ -352,7 +352,9 @@ body {
   border-radius: 50px;
   padding: 11px 24px;
 }
-
+.next-page-btn:active {
+    background-color: #342419;
+}
 .footer{
  font-family: 'Cormorant Garamond', serif;
  color: #234729;
