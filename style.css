@@ -829,3 +829,11 @@ body{
   text-decoration: none;
   background-color: #5597bd;
 }
+
+th{
+  text-align: center;
+}
+.dexphoto{
+  width: auto;
+  height: 50px;
+}
