@@ -67,7 +67,7 @@ body{
     text-decoration: underline;
 }
 #sky{
-    height: 500px;
+    height: 400px;
     width: 100%;
     display: flex;
 }
@@ -196,6 +196,7 @@ body{
 .question{
     font-weight: bold;
     margin-bottom: 10px;
+    font-size: 20px;
 }
 #quiz{
     margin-bottom: 25px;
@@ -346,7 +347,7 @@ body{
  border-radius: 30px;
  padding: 36px 28px;
  text-align: center;
- margin: 175px auto auto auto;
+ margin: 175px auto 28px auto;
  box-shadow: 5px 5px 0px #593e2b;
  width: 710px;
 }
@@ -854,4 +855,8 @@ th{
 }
 .dex-category{
   text-align: center;
+}
+.answers label{
+  margin-top: 50px;
+  font-size: 20px;
 }
